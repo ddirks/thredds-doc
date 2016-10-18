@@ -1,0 +1,197 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: TDS Tutorial 
+  version: 5.0.0 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: Getting Started with the TDS
+    output: web, pdf
+    folderitems:
+    - title: Installing Java and Tomcat
+      url: /install_java_tomcat.html
+      output: web, pdf
+
+    - title: Tomcat Directory Structure
+      url: /tomcat_dir_structure_qt.html
+      output: web, pdf
+
+    - title: Running Tomcat 
+      url: /running_tomcat.html
+      output: web, pdf
+
+    - title: Tomcat Log Files
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Tomcat Config Files
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Deploying the TDS
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Tomcat Manager Application
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Tomcat Security
+      url: /under_construction.html
+      output: web, pdf
+
+  - title: TDS Configuration
+    output: web, pdf
+    folderitems:
+    - title: Client Catalog Primer
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Basic TDS Config Catalogs
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Basic TDS Configuration
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Adding OGC / ISO Services
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Adding the netCDF Subset Service
+      url: /under_construction.html
+      output: web, pdf
+
+  - title: Monitoring and Debugging
+    output: web, pdf
+    folderitems:
+    - title: TDS Monitoring and Debugging
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Tomcat and TDS Logs
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Using the TdsMonitor Tool
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: 3rd Party Tools
+      url: /under_construction.html
+      output: web, pdf
+  
+  - title: netCDF Markup Language (NcML)
+    output: web, pdf
+    folderitems:
+    - title: Basic NcML Tutorial
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: NcML Aggregation
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Using NcML in the TDS
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Basic NcML Examples
+      url: /under_construction.html
+      output: web, pdf
+  
+    - title: NcML Aggregation Examples
+      url: /under_construction.html
+      output: web, pdf
+
+  - title: Feature Collections
+    output: web, pdf
+    folderitems:
+    - title: Overview
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: GRIB Feature Collections
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: GRIB Feature Collection Tutorial
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: GRIB Files in CDM
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: GRIB Tables in CDM
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Forecast Model Run Collections (FMRC)
+      url: /under_construction.html
+      output: web, pdf
+  
+    - title: FMRC Examples
+      url: /under_construction.html
+      output: web, pdf
+
+  - title: Metadata
+    output: web, pdf
+    folderitems:
+    - title: THREDDS Metadata
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: ISO Metadata Generation
+      url: /under_construction.html
+      output: web, pdf
+
+  - title: Production Servers
+    output: web, pdf
+    folderitems:
+    - title: Installation Checklist
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Troubleshooting Problems
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Performance Tips
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Upgrading to 5.0
+      url: /under_construction.html
+      output: web, pdf
+
+  - title: FAQ
+    output: web, pdf
+    folderitems:
+    - title: FAQ
+      url: /under_construction.html
+      output: web, pdf
+
+  - title: Quick Reference Guide
+    output: web, pdf
+    folderitems:
+    - title: Quick Reference Guide
+      url: /under_construction.html
+      output: web, pdf
+
