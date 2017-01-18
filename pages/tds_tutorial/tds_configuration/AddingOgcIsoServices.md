@@ -219,15 +219,15 @@ ncWMS provides several styling and displaying capabilities that are also availab
 
 #### Various `WCS` and `WMS` Clients
 
-* [GoogleEarth](https://www.google.com/earth/) (WMS) [free]
+* [GoogleEarth](https://www.google.com/earth/){:target="_blank"} (WMS) [free]
 * Godiva3 (WMS) [free - distributed with TDS]
-* [NASA WorldWind](https://worldwind.arc.nasa.gov) (WMS) [free]
-* [IDV](https://www.unidata.ucar.edu/software/idv/) (WMS) [free]
-* [ToolsUI](http://www.unidata.ucar.edu/downloads/netcdf/netcdf-java-4/index.jsp) (WMS) [free]
-* [OWSlib](http://geopython.github.io/OWSLib/) (WMS and WCS) [free]
-* [Map Express]() (WMS and `WCS` [commercial / free]
-* [IDL](http://www.harrisgeospatial.com/ProductsandSolutions/GeospatialProducts/IDL.aspx) (WMS) [commercial]
-* [gvSIG](http://www.gvsig.org/web/) (WMS and WCS) [free]
+* [NASA WorldWind](https://worldwind.arc.nasa.gov){:target="_blank"} (WMS) [free]
+* [IDV](https://www.unidata.ucar.edu/software/idv/){:target="_blank"} (WMS) [free]
+* [ToolsUI](http://www.unidata.ucar.edu/downloads/netcdf/netcdf-java-4/index.jsp){:target="_blank"} (WMS) [free]
+* [OWSlib](http://geopython.github.io/OWSLib/){:target="_blank"} (WMS and WCS) [free]
+* [Map Express](https://www.cadcorp.com/products/free-mapping-software/){:target="_blank"} (`WMS` and `WCS`) [commercial / free]
+* [IDL](http://www.harrisgeospatial.com/ProductsandSolutions/GeospatialProducts/IDL.aspx){:target="_blank"} (WMS) [commercial]
+* [gvSIG](http://www.gvsig.org/web/){:target="_blank"} (WMS and WCS) [free]
 
 #### Godiva2 `WMS` Client
 
