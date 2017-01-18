@@ -240,7 +240,7 @@ entries:
       output: web, pdf
 
     - title: Data Source Plugins
-      url: /under_construction.html
+      url: /dataset_source_plugin.html
       output: web, pdf
 
     - title: WCS Reference
