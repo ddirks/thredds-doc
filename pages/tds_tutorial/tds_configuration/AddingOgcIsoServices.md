@@ -8,39 +8,42 @@ permalink: /adding_ogc_iso_services.html
 
 ## Configure TDS to Allow WCS, WMS, and `ncISO` Access
 
-Out of the box, the TDS distribution will have WCS, WMS, and `ncISO` disabled.
-They must be explicitly allowed in the `threddsConfig.xml` file.
+Out of the box, the TDS distribution will have WCS, WMS, and `ncISO` enabled.
+If you do not wish to use these services, they must be explicitly allowed in the `threddsConfig.xml` file.
+Please see the  [threddsConfig.xml file](/tds_config_ref.html#wcs-service) documentation for information on how to disable these services.
 The default `threddsConfig.xml` file (which should now be in your `${tds.content.root.path}/content/thredds` directory) contains commented out sections for each of these services.
 
 ### `WCS` Configuration
 
-To enable the `WCS` service for locally served datasets, you will need the following in your `threddsConfig.xml` file:
+The following section in the `threddsConfig.xml` file controls the WCS service:
 
 ~~~xml
 <WCS>
   <allow>true</allow>
+  ...
 </WCS>
 ~~~
 
 Additional `WCS` configuration options can be set in the `threddsConfig.xml` file.
-More details are available in the `WCS` section of the `threddsConfig.xml` file documentation.
+More details are available in the `WCS` section of the [threddsConfig.xml file](/tds_config_ref.html#wcs-service) documentation.
 
 ### `WMS` Configuration
 
-To enable the `WMS` service for locally served datasets, you will need the following in your `threddsConfig.xml` file:
+The following section in the `threddsConfig.xml` file controls the WMS service:
 
 ~~~xml
 <WMS>
   <allow>true</allow>
+  ...
 </WMS>
 ~~~
 
 Additional `WMS` configuration options can be set in the `threddsConfig.xml` file,
-More details are available in the `WMS` section of the `threddsConfig.xml` file documentation.
+More details are available in the `WMS` section of the [threddsConfig.xml file](/tds_config_ref.html#wms-service) documentation.
 
 ### `ncISO` Configuration
 
-To enable the `ncISO` services for locally served datasets, you will need the following in your `threddsConfig.xml` file:
+The following section in the `threddsConfig.xml` file controls the `ncIso` services:
 
 ~~~xml
 <NCISO>
@@ -54,7 +57,7 @@ Each `*Allow` element allows one of the three `ncISO` services.
 
 ### Adding `WCS` and `WMS` Services
 
-Once the `WCS` and `WMS` services are enabled, all that is required for the TDS to provide `WCS` and `WMS` access to datasets is for those datasets to reference `WCS` and `WMS` service elements.
+As long as the `WCS` and `WMS` services are enabled, all that is required for the TDS to provide `WCS` and `WMS` access to datasets is for those datasets to reference `WCS` and `WMS` service elements.
 Adding them to an existing compound service would look something like this:
 
 ~~~xml
@@ -69,7 +72,7 @@ Adding them to an existing compound service would look something like this:
 
 ### Adding `ncISO` Services
 
-Similar to above, once the `ncISO` services are enabled, all that is required for the TDS to provide `ncISO` services on datasets is for those datasets to reference the `ncISO` service elements.
+Similar to above, as long as the `ncISO` services are enabled, all that is required for the TDS to provide `ncISO` services on datasets is for those datasets to reference the `ncISO` service elements.
 For instance, adding to the same compound service as above:
 
 ~~~xml

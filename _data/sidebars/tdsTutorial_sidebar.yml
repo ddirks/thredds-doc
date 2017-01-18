@@ -244,7 +244,7 @@ entries:
       output: web, pdf
 
     - title: WCS Reference
-      url: /wcs_ref
+      url: /wcs_ref.html
       output: web, pdf
 
     - title: WMS Reference
