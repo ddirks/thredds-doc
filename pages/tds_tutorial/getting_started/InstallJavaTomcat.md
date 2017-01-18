@@ -8,7 +8,9 @@ permalink: install_java_tomcat.html
 
 ## System requirements
 
-{% include note.html content="Users of GCJ and OS-provided packages (linux) for Java and/or Tomcat may want to reference the http://www.unidata.ucar.edu/mailing_lists/archives/thredds/[THREDDS mailing list] for installation help." %}
+{% include note.html content="
+Users of GCJ and OS-provided packages (linux) for Java and/or Tomcat may want to reference the http://www.unidata.ucar.edu/mailing_lists/archives/thredds/[THREDDS mailing list] for installation help."
+%}
 
 * Oracle Java 8 (latest version)
 * Apache Tomcat 8.x
@@ -66,11 +68,16 @@ While there are different distributors of Java and servlet containers, Unidata d
     drwxr-xr-x  2 tds workshop     4096 Jul 15 10:33 Videos
     ~~~
 
-    {% include important.html content="Depending on your OS you may need install either the 32-bit or 64-bit version of the JDK. But, we *really, really, really recommend* you use a 64-bit OS if you're planning to run the THREDDS Data Server." %}
+    {% include important.html content="
+    Depending on your OS you may need install either the 32-bit or 64-bit version of the JDK.
+    But, we *really, really, really recommend* you use a 64-bit OS if you're planning to run the THREDDS Data Server.
+    " %}
 
 ## Installing Tomcat
 
-{% include note.html content="For more information about installing Tomcat on Windows OS, see the [Tomcat setup guide](http://tomcat.apache.org/tomcat-8.0-doc/setup.html#Windows) for installation on different platforms." %}
+{% include note.html content="
+For more information about installing Tomcat on Windows OS, see the [Tomcat setup guide](http://tomcat.apache.org/tomcat-8.0-doc/setup.html#Windows) for installation on different platforms.
+" %}
 
 1.  [Download](http://tomcat.apache.org/download-80.cgi){:target="_blank"} current version of the Tomcat 8 servlet container.
 2.  Install Tomcat as per the Apache Tomcat [installation instructions](http://tomcat.apache.org/tomcat-8.0-doc/setup.html){:target="_blank"}.
@@ -119,4 +126,3 @@ While there are different distributors of Java and servlet containers, Unidata d
     -rwxrwxr-x  1 tds workshop 27866303 Jul 15 10:02 toolsUI-4.3.18.jar
     drwxr-xr-x  2 tds workshop     4096 Jul 15 10:33 Videos
     ~~~
-

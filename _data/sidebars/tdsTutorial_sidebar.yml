@@ -36,46 +36,82 @@ entries:
       output: web, pdf
 
     - title: Tomcat Log Files
-      url: /under_construction.html
+      url: /tomcat_log_files.html
       output: web, pdf
 
     - title: Tomcat Config Files
-      url: /under_construction.html
+      url: /tomcat_configuration_files.html
       output: web, pdf
 
     - title: Deploying the TDS
-      url: /under_construction.html
+      url: /deploying_the_tds.html
       output: web, pdf
 
     - title: Tomcat Manager Application
-      url: /under_construction.html
+      url: /tomcat_manager_app.html
       output: web, pdf
 
-    - title: Tomcat Security
-      url: /under_construction.html
+    - title: Where to go from here
+      url: /where_to_go_from_here.html 
+      output: web, pdf
+
+
+  - title: Client Catalogs
+    output: web, pdf
+    folderitems:
+    - title: Basic Client Catalog Primer
+      url: /basic_client_catalog.html
+      output: web, pdf
+
+    - title: Nested Datasets
+      url: /nested_datasets.html
+      output: web, pdf
+
+    - title: Client Catalog Metadata
+      url: /client_catalog_metadata.html
+      output: web, pdf
+
+    - title: Catalog References
+      url: /client_catalog_references.html
+      output: web, pdf
+
+    - title: Compound service elements
+      url: /compound_service_elements.html
+      output: web, pdf
+
+    - title: XML Validation
+      url: /client_catalog_xml_validation.html
+      output: web, pdf
+
+    - title: Client Catalogs in ToolsUI
+      url: /client_catalog_via_toolsUI.html
       output: web, pdf
 
   - title: TDS Configuration
     output: web, pdf
     folderitems:
-    - title: Client Catalog Primer
-      url: /under_construction.html
+    - title: TDS Content Directory 
+      url: /tds_content_directory.html
       output: web, pdf
 
-    - title: Basic TDS Config Catalogs
-      url: /under_construction.html
+    - title: Default TDS Configuration Catalog
+      url: /default_config_catalog.html
+      output: web, pdf
+
+    - title: Basics of Configuration Catalogs
+      url: /basic_config_catalog.html
       output: web, pdf
 
     - title: Basic TDS Configuration
-      url: /under_construction.html
+      url: /basic_tds_configuration.html
       output: web, pdf
 
     - title: Adding OGC / ISO Services
-      url: /under_construction.html
+      url: /adding_ogc_iso_services.html
       output: web, pdf
 
     - title: Adding the netCDF Subset Service
-      url: /under_construction.html
+      url: /adding_ncss.html
       output: web, pdf
 
   - title: Monitoring and Debugging
@@ -165,8 +201,8 @@ entries:
   - title: Production Servers
     output: web, pdf
     folderitems:
-    - title: Installation Checklist
-      url: /under_construction.html
+    - title: Overview
+      url: /production_server_overview.html
       output: web, pdf
 
     - title: Troubleshooting Problems
@@ -181,6 +217,10 @@ entries:
       url: /under_construction.html
       output: web, pdf
 
+    - title: Installation Checklist
+      url: /under_construction.html
+      output: web, pdf
+
   - title: FAQ
     output: web, pdf
     folderitems:
@@ -188,10 +228,34 @@ entries:
       url: /under_construction.html
       output: web, pdf
 
-  - title: Quick Reference Guide
+  - title: Reference Guide
     output: web, pdf
     folderitems:
-    - title: Quick Reference Guide
+    - title: TDS Config (threddsConfig.xml)
+      url: /tds_config_ref.html
+      output: web, pdf
+
+    - title: Viewers
+      url: /viewers_ref.html
+      output: web, pdf
+
+    - title: Data Source Plugins
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: WCS Reference
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: WMS Reference
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Remote Management Reference
+      url: /under_construction.html
+      output: web, pdf
+
+    - title: Netcdf Subset Service Reference
       url: /under_construction.html
       output: web, pdf
 
