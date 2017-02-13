@@ -165,9 +165,9 @@ Here are example WCS queries (REST API Call appened to the wcs access url of a d
 | GetCoverage (GeoTIFF) | `?request=GetCoverage&version=1.0.0&service=WCS&format=GeoTIFF&coverage=<variable_name>&time=<iso_time_string>&vertical=<vertical_level>&bbox=<west,south,east,north>` |
 | GetCoverage (NetCDF3) | `?request=GetCoverage&version=1.0.0&service=WCS&format=NetCDF3&coverage=<variable_name>&time=<iso_time_string>&vertical=<vertical_level>&bbox=<west,south,east,north>` |
 
-WCS Clients
+## WCS Clients
 
-## A few WCS clients we know of (though we haven't tried all of them):
+A few WCS clients we know of (though we haven't tried all of them):
 
 * [OWSlib](http://geopython.github.io/OWSLib/){:target="_blank"} (WMS and WCS) [free]
 * [Map Express](https://www.cadcorp.com/products/free-mapping-software/){:target="_blank"} (WMS and `WCS`) [commercial / free]
