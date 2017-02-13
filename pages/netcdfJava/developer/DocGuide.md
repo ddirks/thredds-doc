@@ -115,35 +115,35 @@ Question block.
 Thinking ahead block
 " %}
 
-~~~md
-{%include troubleshooting.html content="
+```
+{%raw%}{%include troubleshooting.html content="
 Troubleshooting block.
-" %}
+" %}{%endraw%}
 
-{%include note.html content="
+{%raw%}{%include note.html content="
 Note block.
-" %}
+" %}{%endraw%}
 
-{%include important.html content="
+{%raw%}{%include important.html content="
 Important block.
-" %}
+" %}{%endraw%}
 
-{%include question.html content="
+{%raw%}{%include question.html content="
 Question block.
-" %}
+" %}{%endraw%}
 
-{%include ahead.html content="
+{%raw%}{%include ahead.html content="
 Thinking ahead block
-" %}
-~~~ 
+" %}{%endraw%}
+```
 
 ## images
 
 Image
 
-~~~md
-{% include image.html file="<location of image starting at images/>" alt="alt text" caption="caption" %}
-~~~
+```
+{%raw%}{% include image.html file="<location of image starting at images/>" alt="alt text" caption="caption" %}{%endraw%}
+```
 
 Note that you must always include a caption, even if it is empty.
 For example, to link to the image `$PATH_TO_GIT_REPO/thredds-doc/images/sl_website-under-construction.jpeg`:
@@ -151,7 +151,7 @@ For example, to link to the image `$PATH_TO_GIT_REPO/thredds-doc/images/sl_websi
 {% include image.html file="sl_website-under-construction.jpeg" alt="alt text" caption="" %}
 
 ~~~md
-{% include image.html file="sl_website-under-construction.jpeg" alt="alt text" caption="" %}
+{%raw%}{% include image.html file="sl_website-under-construction.jpeg" alt="alt text" caption="" %}{%endraw%}
 ~~~
 
 
