@@ -248,7 +248,7 @@ entries:
       output: web, pdf
 
     - title: WMS Reference
-      url: /under_construction.html
+      url: /wms_ref.html
       output: web, pdf
 
     - title: Remote Management Reference
@@ -257,5 +257,9 @@ entries:
 
     - title: Netcdf Subset Service Reference
       url: /under_construction.html
+      output: web, pdf
+
+    - title: netCDF-Java and TDS Doc Guide
+      url: /doc_guide.html
       output: web, pdf
 
