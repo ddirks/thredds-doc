@@ -23,7 +23,7 @@ topnav_dropdowns:
         - title: THREDDS Data Server Tutorial
           url: tds_tutorial_index.html
         - title: netCDF-Java Tutorial
-          url: /under_construction.html
+          url: /netcdf_java_tutorial_index.html
     - title: External Docs
       folderitems:
         - title: Rosetta

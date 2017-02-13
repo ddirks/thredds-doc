@@ -93,6 +93,7 @@ defaults:
 sidebars:
 - project_sidebar
 - tdsTutorial_sidebar 
+- netcdfJavaTutorial_sidebar 
 
 description: "This is a documentation site for the netCDF-Java and THREDDS Data Server (TDS) technologies, which are part of the THREDDS Project."
 # the description is used in the feed.xml file
