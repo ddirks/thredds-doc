@@ -23,6 +23,9 @@ entries:
   - title: Getting Started with the TDS
     output: web, pdf
     folderitems:
+    - title: TDS Overview
+      url: /tds_tutorial_index.html
+      output: web, pdf
     - title: Installing Java and Tomcat
       url: /install_java_tomcat.html
       output: web, pdf
@@ -225,7 +228,7 @@ entries:
     output: web, pdf
     folderitems:
     - title: FAQ
-      url: /under_construction.html
+      url: /tds_faq.html
       output: web, pdf
 
   - title: Reference Guide

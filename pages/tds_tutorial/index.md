@@ -7,98 +7,32 @@ permalink: tds_tutorial_index.html
 toc: false
 ---
 
-# THREDDS Data Server Administration Tutorial
+The THREDDS Data Server (TDS) is a web server that provides metadata and data access for scientific datasets, using OPeNDAP, OGC WMS and WCS, HTTP, and other remote data access protocols.
+The TDS is developed and supported by Unidata, a division of the University Corporation for Atmospheric Research (UCAR), and is sponsored by the National Science Foundation.
 
-{::comment}
+Some of the technology in the TDS:
 
-This text is completely ignored by kramdown - a comment in the text.
-## TDS Overview (link:TDSOverview.pptx[ppt])
-(link:TDSOverview.pdf[pdf])
+* THREDDS [Dataset Inventory Catalogs](updateme) are used to provide virtual directories of available data and their associated metadata. 
+  These catalogs can be generated dynamically or statically.
+* The [Netcdf-Java/CDM library](updateme) reads NetCDF, OpenDAP, and HDF5 datasets, as well as other binary formats such as GRIB and NEXRAD into a Common Data Model (CDM), essentially an (extended) netCDF view of the data.
+  Datasets that can be read through the Netcdf-Java library are called CDM datasets.
+* TDS can use the [NetCDF Markup Language](updateme) (NcML) to modify and create virtual aggregations of CDM datasets.
+* An integrated server provides [OPeNDAP](http://www.opendap.org/){:target="_blank"} access to any CDM dataset.
+  OPeNDAP is a widely used, subsetting data access method extending the HTTP protocol.
+* An integrated server provides bulk file access through the HTTP protocol.
+* An integrated server provides data access through the [OpenGIS Consortium (OGC) Web Coverage Service (WCS)](http://www.opengeospatial.org/standards/wcs){:target="_blank"} protocol, for any "gridded" dataset whose coordinate system information is complete.
+* An integrated server provides data access through the [OpenGIS Consortium (OGC) Web Map Service (WMS)](http://www.opengeospatial.org/standards/wms){:target="_blank"} protocol, for any "gridded" dataset whose coordinate system information is complete.
+  This software was developed by Jon Blower (University of Reading (UK) E-Science Center) as part of the [ESSC Web Map Service for environmental data](http://behemoth.nerc-essc.ac.uk/ncWMS/godiva2.html){:target="_blank"} (aka Godiva2).
+* The integrated [ncISO server](updateme){:target="_blank"} provides automated metadata analysis and ISO metadata generation.
+* The integrated [NetCDF Subset Service](updateme){:target="_blank"} allows subsetting certain CDM datasets in coordinate space, using a REST API.
+  Gridded data subsets can be returned in [CF-compliant](http://cfconventions.org/cf-conventions/v1.6.0/cf-conventions.html){:target="_blank"} netCDF-3 or netCDF-4. Point data subsets can be returned in CSV, XML, or [CF-DSG v1.6](http://cfconventions.org/cf-conventions/v1.6.0/cf-conventions.html#discrete-sampling-geometries){:target="_blank"} netCDF files.
 
-## 1.Tomcat Configuration
+The THREDDS Data Server is implemented in 100% Java\*, and is contained in a single war file, which allows very easy installation into a servlet container such as the open-source Tomcat web server.
+Configuration is made as simple and as automatic as possible, and we have made the server as secure as possible.
+The library is freely available and the source code is released under the (MIT-style) netCDF library license.
 
-* <<GettingStarted#,Getting Started With the TDS: Local Test
-Server Setup>>
-* <<Security#,Security Overview>>
+\*Writing to netCDF-4 files is supported through the netCDF C library only.
 
-## 2. TDS Configuration
-
-* <<CatalogPrimer#,Client Catalog Primer>>
-* <<BasicConfigCatalogs#,Basic TDS Configuration Catalogs>>
-* <<ConfigCatalogs#,TDS Configuration Catalogs>>
-* <<BasicThreddsConfig_xml#,Basic threddsConfig.xml>>
-* <<AddingServices#,Adding OGC/ISO Services>>
-* <<../reference/WMS#,Detailed WMS Configuration>>
-* Netcdf Subset Service:
-<<../reference/NetcdfSubsetServiceConfigure#,configure>>,
-<<../reference/NetcdfSubsetServiceReference#,reference>>
-* threddsConfig.xml
-<<../reference/ThreddsConfigXMLFile#,reference>>
-
-## 4. TDS Monitoring and Debugging
-
-* <<TDSMonitoringAndDebugging#,TDS Monitoring and Debugging>>
-* <<TomcatAndTDSLogs#,Tomcat and TDS Logs>>
-* <<tdsMonitor#,Using the TdsMonitor tool>>
-* There are also various free, 3rd-party monitoring and debugging tools:
-** http://www.google.com/search?btnG#1&pws#0&q#log+analyzers[Log
-analyzers]
-** http://tomcat.apache.org/tomcat-7.0-doc/manager-howto.html[Tomcat
-manager application]
-** Browser-based HTTP header viewers
-*** http://www.youtube.com/watch?v#tKD50_zvZoo[Live HTTP Headers]
-(Firefox Add-On)
-*** https://developers.google.com/chrome-developer-tools/docs/network#http_headers[DevTools]
-(Chrome)
-** JVM monitoring tools
-*** http://visualvm.java.net/api-quickstart.html[VisualVM]
-*** http://www.youtube.com/watch?v#Xy0tsT-GD68[JConsole]
-
-## 5. Using NcML in TDS
-
-* <<../../netcdf-java/ncml/Tutorial#,Basic NcML tutorial>>
-* <<../../netcdf-java/ncml/Aggregation#,NcML Aggregation>>
-* <<NcML#,Using NcML in the TDS>>
-* <<NcMLExamples#,NcML Example Problems>>
-* <<NcMLAggExamples#,NcML Aggregation Example Problems>>
-
-## 6. Feature Collections
-
-* <<../reference/collections/FeatureCollections#,Feature
-Collections>>
-* <<../reference/collections/GribCollections#,GRIB Feature
-Collections>>
-* <<GRIBFeatureCollectionTutorial#,GRIB Feature Collection
-Tutorial>>
-* <<../reference/collections/FmrcCollection#,FMRC (Forecast Model
-Run Collections)>>]
-* <<FmrcFeatureCollectionsTutorial#,FMRC Tutorial>>
-* <<../../netcdf-java/reference/formats/GribFiles#,GRIB Files in
-CDM>>
-* <<../../netcdf-java/reference/formats/GribTables#,GRIB Tables
-in CDM>>]
-
-## 7. Other Advanced Features
-
-* <<../reference/RestrictedAccess#,Restricting dataset access>>
-* <<../reference/Viewers#,Viewer Links>>
-
-## 8. Metadata
-
-* <<Metadata#,THREDDS Metadata>>
-* <<../reference/ncISO#,ISO metadata generation: (ncIso)>>
-
-## 9. Production Servers
-
-* <<Checklist#,Installation Checklist for Production>>
-* <<TroubleShooting#,TroubleShooting Problems>>
-* <<../reference/Performance#,Performance
-Tips TroubleShooting>>
-* <<../UpgradingTo4.5#,Upgrading to 4.5>>
-
-## Other Resources:
-
-* <<../reference/index#,Reference documentation>>
-* <<../faq#,FAQ>>
-
-{:/comment}
+Much of the realtime data available over the Unidata Internet Data Distribution (IDD) is available through a demonstration THREDDS Data Server hosted at Unidata at [http://thredds.ucar.edu/](http://thredds.ucar.edu/thredds/catalog.html){:target="_blank"}.
+You are welcome to browse and access these meteorological datasets.
+If you need regular access to large amounts of data, please contact <support-idd@unidata.ucar.edu>.
