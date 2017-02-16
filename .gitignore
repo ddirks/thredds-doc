@@ -1,4 +1,6 @@
 Gemfile.lock
-_site/
 *.swp
 *.DS_Store
+.gradle/
+.idea/
+build/
