@@ -263,6 +263,6 @@ entries:
       output: web, pdf
 
     - title: netCDF-Java and TDS Doc Guide
-      url: /doc_guide.html
+      url: /tds_doc_guide.html
       output: web, pdf
 
