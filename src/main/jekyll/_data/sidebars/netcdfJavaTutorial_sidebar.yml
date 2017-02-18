@@ -140,9 +140,9 @@ entries:
 #      url: /doc_guide.html
 #      output: web, pdf
 #
-#  - title: netCDF-Java Reference Docs
-#    output: web, pdf
-#    folderitems:
+  - title: netCDF-Java Reference Docs
+    output: web, pdf
+    folderitems:
 #    - title: ArrayStructures
 #      url: /under_construction.html
 #      output: web, pdf
@@ -150,3 +150,7 @@ entries:
 #    - title: BUFR Files
 #      url: /under_construction.html
 #      output: web, pdf
+    - title: netCDF-Java and TDS Doc Guide
+      url: /ncj_doc_guide.html
+      output: web, pdf
+
