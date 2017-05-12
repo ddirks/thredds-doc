@@ -6,6 +6,9 @@ jdk:
 script:
   - ./gradlew clean jekyllBuild
 
+after_script:
+  - touch build/_site/.nojekyll
+
 deploy:
   provider: pages
   skip_cleanup: true
