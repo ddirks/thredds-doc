@@ -2,11 +2,14 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: THREDDS Documentation 
+topnav_title: THREDDS Documentation
 # this appears on the top navigation bar next to the home button
 
 site_title: THREDDS Documentation
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
+
+site_topic: THREDDS
+# this appears in the footer
 
 company_name: Unidata
 # this appears in the footer
@@ -67,7 +70,7 @@ defaults:
       layout: "page"
       comments: true
       search: true
-      sidebar: project_sidebar 
+      sidebar: project_sidebar
   -
     scope:
       path: ""
@@ -92,8 +95,8 @@ defaults:
 
 sidebars:
 - project_sidebar
-- tdsTutorial_sidebar 
-- netcdfJavaTutorial_sidebar 
+- tdsTutorial_sidebar
+- netcdfJavaTutorial_sidebar
 
 description: "This is a documentation site for the netCDF-Java and THREDDS Data Server (TDS) technologies, which are part of the THREDDS Project."
 # the description is used in the feed.xml file
