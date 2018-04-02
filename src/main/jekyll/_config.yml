@@ -33,7 +33,7 @@ port: 4005
 
 feedback_subject_line: THREDDS Documentation Feedback
 
-feedback_email: support-thredds@unidta.ucar.edu
+feedback_email: support-thredds@unidata.ucar.edu
 # used as a contact email for the Feedback link in the top navigation bar
 
 # feedback_disable: true

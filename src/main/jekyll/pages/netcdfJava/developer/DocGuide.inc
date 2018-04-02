@@ -12,7 +12,7 @@ Each markdown file needs to start with some front matter:
 
 ~~~md
 title: Documentation Guide
-last_updated: 2016-09-27 
+last_updated: 2016-09-27
 sidebar: tdsTutorial_sidebar
 toc: false
 permalink: doc_guide.html
@@ -151,7 +151,7 @@ For example, to link to the image `$PATH_TO_GIT_REPO/thredds-doc/images/sl_websi
 
 Sidebar information can be found under `_data/sidebars/`.
 For example, the sidebar used in the TDS Tutorial is `_data/sidebars/tdsTutorial_sidebar.yml`.
-If you add a new sidebar, you will need to make sure to add it to the `_config.yml` file at the top level of the docs directory, as well as the sidebar config, located at `_includes/custom/sidebarconfigs.html` 
+If you add a new sidebar, you will need to make sure to add it to the `_config.yml` file at the top level of the docs directory, as well as the sidebar config, located at `_includes/custom/sidebarconfigs.html`
 
 ## Indenting text, code blocks, etc. in a list:
 
@@ -163,7 +163,7 @@ If you add a new sidebar, you will need to make sure to add it to the `_config.y
    $ ./startup.sh
    ~~~
 
-   ~~~~~md 
+   ~~~~~md
    ~~~bash
    $ cd ${tomcat_home}/bin
    $ ./shutdown.sh
@@ -180,7 +180,7 @@ If you add a new sidebar, you will need to make sure to add it to the `_config.y
    In order to get the `~~~bash~~~` and `~~~` to show up in the code block above, I had to do the following:
 
    ~~~~~~~~md
-   ~~~~~md 
+   ~~~~~md
    ~~~bash
    $ cd ${tomcat_home}/bin
    $ ./shutdown.sh
@@ -202,13 +202,15 @@ For example, `pages/tds_tutorial/developer/DocGuide.md`
 ~~~md
 ---
 title: Documentation Guide
-last_updated: 2017-02-17 
+last_updated: 2017-02-17
 sidebar: tdsTutorial_sidebar
 toc: false
 permalink: tds_doc_guide.html
 ---
-
-{% markdown pages/netcdfJava/developer/DocGuide.inc %}
+{% raw %}
+{% capture rmd %}{% includefile pages/netcdfJava/developer/DocGuide.inc %}{% endcapture %}
+{{ rmd | liquify | markdownify }}
+{% endraw %}
 ~~~
 
 and `pages/netcdfJava/developer/DocGuide.md`
@@ -216,15 +218,21 @@ and `pages/netcdfJava/developer/DocGuide.md`
 ~~~md
 ---
 title: Documentation Guide
-last_updated: 2017-02-17 
+last_updated: 2017-02-17
 sidebar: netcdfJavaTutorial_sidebar
 toc: false
 permalink: ncj_doc_guide.html
 ---
-
-{% markdown pages/netcdfJava/developer/DocGuide.inc %}
+{% raw %}
+{% capture rmd %}{% includefile pages/netcdfJava/developer/DocGuide.inc %}{% endcapture %}
+{{ rmd | liquify | markdownify }}
+{% endraw %}
 ~~~
 
 Each markdown file contains both identical (title, last_update, toc) as well as unique (sidebar, permalink) frontmatter, but references the same actual content, which is contained within the file `pages/netcdfJava/developer/DocGuide.inc`
 This is the only way to have the same information contained within different tutorials, while preserving the tutorial sidebar.
 
+Yes, this is ugly. First, we capture the raw text and store it as a string called "rmd".
+From there, the string is passed through two Liquid Filters --- liquify and markdownify.
+"liquify" interperets the liquid tags in the file, and markidownify renders any markdown in the text.
+Note that the filters must be applied in this order.

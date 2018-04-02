@@ -1,6 +1,6 @@
 ---
 title: THREDDS Web Coverage Service
-last_updated: 2017-01-18
+last_updated: 2018-04-02
 sidebar: tdsTutorial_sidebar
 toc: false
 permalink: wcs_ref.html

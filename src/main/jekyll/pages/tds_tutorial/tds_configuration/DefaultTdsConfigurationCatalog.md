@@ -1,6 +1,6 @@
 ---
 title: Default TDS Configuration Catalog
-last_updated: 2017-01-16 
+last_updated: 2018-04-02
 sidebar: tdsTutorial_sidebar
 toc: false
 permalink: /default_config_catalog.html

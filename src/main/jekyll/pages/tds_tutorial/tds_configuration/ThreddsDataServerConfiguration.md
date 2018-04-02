@@ -1,6 +1,6 @@
 ---
 title: Basic TDS Configuration
-last_updated: 2017-01-17 
+last_updated: 2018-04-02
 sidebar: tdsTutorial_sidebar
 toc: false
 permalink: basic_tds_configuration.html

@@ -1,6 +1,6 @@
 ---
 title: Installation of Java and Tomcat
-last_updated: 2016-09-27 
+last_updated: 2018-04-02
 sidebar: tdsTutorial_sidebar
 toc: false
 permalink: install_java_tomcat.html
@@ -9,7 +9,7 @@ permalink: install_java_tomcat.html
 ## System requirements
 
 {% include note.html content="
-Users of GCJ and OS-provided packages (linux) for Java and/or Tomcat may want to reference the http://www.unidata.ucar.edu/mailing_lists/archives/thredds/[THREDDS mailing list] for installation help."
+Users of GCJ and OS-provided packages (linux) for Java and/or Tomcat may want to reference the [THREDDS mailing list](http://www.unidata.ucar.edu/mailing_lists/archives/thredds/) for installation help."
 %}
 
 * Oracle Java 8 (latest version)

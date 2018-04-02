@@ -3,8 +3,8 @@
 
 entries:
 - title: Sidebar
-  product: TDS Tutorial 
-  version: 5.0.0 
+  product: TDS Tutorial
+  version: 5.0.0
   folders:
 
   - title:
@@ -19,10 +19,10 @@ entries:
       url: /tocpage
       output: pdf
       type: frontmatter
-
   - title: Getting Started with the TDS
     output: web, pdf
     folderitems:
+
     - title: TDS Overview
       url: /tds_tutorial_index.html
       output: web, pdf
@@ -34,7 +34,7 @@ entries:
       url: /tomcat_dir_structure_qt.html
       output: web, pdf
 
-    - title: Running Tomcat 
+    - title: Running Tomcat
       url: /running_tomcat.html
       output: web, pdf
 
@@ -55,7 +55,7 @@ entries:
       output: web, pdf
 
     - title: Where to go from here
-      url: /where_to_go_from_here.html 
+      url: /where_to_go_from_here.html
       output: web, pdf
 
 
@@ -93,7 +93,7 @@ entries:
   - title: TDS Configuration
     output: web, pdf
     folderitems:
-    - title: TDS Content Directory 
+    - title: TDS Content Directory
       url: /tds_content_directory.html
       output: web, pdf
 
@@ -121,84 +121,84 @@ entries:
     output: web, pdf
     folderitems:
     - title: TDS Monitoring and Debugging
-      url: /under_construction.html
+      url: /tds_monitoring_and_debugging.html
       output: web, pdf
 
     - title: Tomcat and TDS Logs
-      url: /under_construction.html
+      url: /tomcat_and_tds_logs.html
       output: web, pdf
 
     - title: Using the TdsMonitor Tool
-      url: /under_construction.html
+      url: /using_the_tdsmonitor_tool.html
       output: web, pdf
 
     - title: 3rd Party Tools
-      url: /under_construction.html
+      url: /third_party_tools.html
       output: web, pdf
-  
+
   - title: netCDF Markup Language (NcML)
     output: web, pdf
     folderitems:
     - title: Basic NcML Tutorial
-      url: /under_construction.html
+      url: /tds_basic_ncml_tutorial.html
       output: web, pdf
 
     - title: NcML Aggregation
-      url: /under_construction.html
+      url: /tds_ncml_aggregation.html
       output: web, pdf
 
     - title: Using NcML in the TDS
-      url: /under_construction.html
+      url: /using_ncml_in_the_tds.html
       output: web, pdf
 
     - title: Basic NcML Examples
-      url: /under_construction.html
+      url: /basic_ncml_examples.html
       output: web, pdf
-  
+
     - title: NcML Aggregation Examples
-      url: /under_construction.html
+      url: /ncml_aggregation_examples.html
       output: web, pdf
 
   - title: Feature Collections
     output: web, pdf
     folderitems:
     - title: Overview
-      url: /under_construction.html
+      url: /feature_collections_ref.html
       output: web, pdf
 
     - title: GRIB Feature Collections
-      url: /under_construction.html
+      url: /grib_feature_collections_ref.html
       output: web, pdf
 
     - title: GRIB Feature Collection Tutorial
-      url: /under_construction.html
+      url: /grib_feature_collections.html
       output: web, pdf
 
     - title: GRIB Files in CDM
-      url: /under_construction.html
+      url: /grib_files_cdm.html
       output: web, pdf
 
     - title: GRIB Tables in CDM
-      url: /under_construction.html
+      url: /grib_tables_cdm.html
       output: web, pdf
 
     - title: Forecast Model Run Collections (FMRC)
-      url: /under_construction.html
+      url: /fmrc_ref.html
       output: web, pdf
-  
-    - title: FMRC Examples
-      url: /under_construction.html
+
+    - title: FMRC Tutorial
+      url: /fmrc_tutorial.html
       output: web, pdf
 
   - title: Metadata
     output: web, pdf
     folderitems:
     - title: THREDDS Metadata
-      url: /under_construction.html
+      url: /thredds_metadata.html
       output: web, pdf
 
-    - title: ISO Metadata Generation
-      url: /under_construction.html
+    - title: ISO Metadata Generation - ncIso
+      url: /iso_metadata.html
       output: web, pdf
 
   - title: Production Servers
@@ -209,19 +209,19 @@ entries:
       output: web, pdf
 
     - title: Troubleshooting Problems
-      url: /under_construction.html
+      url: /troubleshooting_problems.html
       output: web, pdf
 
     - title: Performance Tips
-      url: /under_construction.html
+      url: /performance_tips.html
       output: web, pdf
 
     - title: Upgrading to 5.0
-      url: /under_construction.html
+      url: /upgrade_to_5.html
       output: web, pdf
 
     - title: Installation Checklist
-      url: /under_construction.html
+      url: /installation_checklist.html
       output: web, pdf
 
   - title: FAQ
@@ -255,14 +255,25 @@ entries:
       output: web, pdf
 
     - title: Remote Management Reference
-      url: /under_construction.html
+      url: /remote_management_ref.html
       output: web, pdf
 
     - title: Netcdf Subset Service Reference
-      url: /under_construction.html
+      url: /netcdf_subset_service_ref.html
       output: web, pdf
 
     - title: netCDF-Java and TDS Doc Guide
       url: /tds_doc_guide.html
       output: web, pdf
 
+    - title: Server-side Catalog Specification
+      url: /server_side_catalog_specification.html
+      output: web, pdf
+
+    - title: Configuring TDS with DatasetScan
+      url: /tds_dataset_scan_ref.html
+      output: web, pdf
+
+    - title: Coverage Datasets
+      url: /coverage_datasets.html
+      output: web, pdf

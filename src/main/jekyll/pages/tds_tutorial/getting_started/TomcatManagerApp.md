@@ -1,6 +1,6 @@
 ---
 title: Tomcat Manager Application
-last_updated: 2016-09-27 
+last_updated: 2018-04-02
 sidebar: tdsTutorial_sidebar
 toc: false
 permalink: tomcat_manager_app.html

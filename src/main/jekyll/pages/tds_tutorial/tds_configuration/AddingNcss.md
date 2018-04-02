@@ -1,6 +1,6 @@
 ---
 title: Adding the NetCDF Subset Service
-last_updated: 2017-01-17
+last_updated: 2018-04-02
 sidebar: tdsTutorial_sidebar
 toc: false
 permalink: /adding_ncss.html

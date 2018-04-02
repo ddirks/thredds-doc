@@ -1,6 +1,6 @@
 ---
 title: Basics of Configuration Catalogs
-last_updated: 2017-01-16 
+last_updated: 2018-04-02
 sidebar: tdsTutorial_sidebar
 toc: false
 permalink: /basic_config_catalog.html

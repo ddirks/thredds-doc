@@ -1,6 +1,6 @@
 ---
 title: Client Catalog Metadata
-last_updated: 2017-01-04 
+last_updated: 2018-04-02
 sidebar: tdsTutorial_sidebar
 toc: false
 permalink: client_catalog_metadata.html
